@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 16px;
+  background-color: #fffde6;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 1.5em;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 25%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1em;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+.inline {
+  display: inline;
+  width: 50px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pet Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pet Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to fill out this survey
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name: <input id="name" type="text" placeholder="Jane" required
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input id="email" type="email" placeholder="jane@email.com" required
+        /></label>
+        <label for="number" id="number-label"
+          >Age:
+          <input id="number" type="number" placeholder="24" min="13" max="100"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label
+          >How many pets do you have?
+          <select id="dropdown">
+            <option value="">select one</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three or more</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Where did you get your last pet?</legend>
+        <label
+          ><input
+            type="radio"
+            name="origination"
+            value="breeder"
+            class="inline"
+            checked
+          />Breeder</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="origination"
+            value="pet-store"
+            class="inline"
+          />Pet store</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="origination"
+            value="rescue"
+            class="inline"
+          />Rescue organization</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="origination"
+            value="family-friend"
+            class="inline"
+          />Family/friend</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="origination"
+            value="other"
+            class="inline"
+          />Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>What type of pet do you have?</legend>
+        <label><input type="checkbox" value="dog" class="inline" />Dog</label>
+        <label><input type="checkbox" value="cat" class="inline" />Cat</label>
+        <label
+          ><input type="checkbox" value="other" class="inline" />Other</label
+        >
+      </fieldset>
+      <label for="pet-pic"
+        >Upload a picture of your pet(s):
+        <input id="pet-pic" type="file" name="file" /></label
+      ><br />
+      <label
+        >Tell us about your pets.
+        <textarea
+          id="story"
+          name="story"
+          rows="3"
+          cols="30"
+          placeholder="I have a dog named Spade..."
+        >
+        </textarea></label
+      ><br />
+      <input id="submit" value="submit" type="submit" />
+    </form>
+  </body>
+</html>
